@@ -11,4 +11,12 @@
 HTTP Request: permintaan dari klien kepada server untuk mendapatkan atau mengirim data.
 HTTP Response: balasan dari server yang berisi hasil dari permintaan tersebut.
 
-Contoh: Browser meminta halaman website → server menerima request → server mengirim halaman sebagai response. 
+Contoh: Browser meminta halaman website → server menerima request → server mengirim halaman sebagai response. <br>
+
+
+**Pejelasan HTML,CSS,JAVASRIP,PHP,MYSQL**
+HTML: Digunakan untuk membuat struktur dan isi halaman web.
+CSS: Digunakan untuk mengatur tampilan dan desain halaman web.
+JavaScript: Digunakan untuk membuat halaman web menjadi interaktif.
+PHP: Bahasa pemrograman sisi server untuk mengolah data dan menjalankan fungsi pada website.
+MySQL: Sistem basis data untuk menyimpan dan mengelola data website.
