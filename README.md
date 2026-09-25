@@ -7,4 +7,4 @@ Kelompok: TI1A<br>
 Tahun Ajaran: 2026/2027 Gasal<br>
 
 
-![Logo ISB](LOGO%20ISB.png) <bd>
+![Logo ISB](LOGO%20ISB.png) <br>
