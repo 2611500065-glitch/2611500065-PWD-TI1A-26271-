@@ -19,4 +19,7 @@ HTML: Digunakan untuk membuat struktur dan isi halaman web.
 CSS: Digunakan untuk mengatur tampilan dan desain halaman web.
 JavaScript: Digunakan untuk membuat halaman web menjadi interaktif.
 PHP: Bahasa pemrograman sisi server untuk mengolah data dan menjalankan fungsi pada website.
-MySQL: Sistem basis data untuk menyimpan dan mengelola data website.
+MySQL: Sistem basis data untuk menyimpan dan mengelola data website.<br>
+
+
+**Hubungan Antarteknologi** adalah kerja sama antara berbagai teknologi untuk membangun dan menjalankan sebuah sistem atau website. Misalnya, HTML mengatur struktur, CSS mengatur tampilan, JavaScript membuat interaksi, PHP mengolah data di server, dan MySQL menyimpan data.
