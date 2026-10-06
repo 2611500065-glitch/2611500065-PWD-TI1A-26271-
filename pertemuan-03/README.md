@@ -27,5 +27,5 @@
 - Hasil pengujian ulang: Halaman berhasil ditampilkan dengan baik, CSS diterapkan, dan elemen formulir dapat digunakan.
 
 ## GitHub Pages
-URL: https://2611500065-glitch.github.io/2611500065-PWD-TI1A-26271/pertemuan-03/
+URL: https://2611500065-glitch.github.io/2611500065-PWD-TI1A-26271-/pertemuan-03/
 # pertemuan-03
