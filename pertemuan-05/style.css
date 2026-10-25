@@ -192,3 +192,41 @@ gap: 16px;
 grid-column: 1 / -1;
 }
 }
+/* Navigasi responsif P5 */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* Perbaikan navigasi hamburger P5 */
+#navMenu {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  #navMenu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #navMenu.active {
+    display: flex;
+  }
+}
+/* Memastikan tombol hamburger dapat diklik */
+#navToggle {
+  position: relative;
+  z-index: 1000;
+  pointer-events: auto;
+  cursor: pointer;
+}
