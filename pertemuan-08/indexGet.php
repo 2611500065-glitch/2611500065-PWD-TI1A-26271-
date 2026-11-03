@@ -154,7 +154,7 @@ switch ($programStudi) {
 
 			<p>
 				Kunjungi
-				<a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+				<a target="_blank" href="https://github.com/2611500065-glitch">Profil GitHub Saya</a>
 			</p>
 
 			<form id="contactForm" action="index.php" method="get" novalidate>
