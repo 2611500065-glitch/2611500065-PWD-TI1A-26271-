@@ -1,6 +1,10 @@
 <?php
-session_start();
 
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
+session_start();
 // P7: Memproses data formulir dan menyimpannya ke dalam session.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 	$nama = trim((string) ($_POST["nama"] ?? ""));
@@ -35,17 +39,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 // Mengamankan data sebelum ditampilkan kembali ke halaman HTML.
 // P6: PHP dasar dan pemrograman sisi peladen
 // Bagian 1: Variabel dan konstanta
-$nim = "0344300002";
-$namaMahasiswa = "Cantika Putih";
-$programStudi = "SI";
+$nim = "2611500065";
+$namaMahasiswa = "ALDI";
+$programStudi = "TI";
 $tahunAkademik = "2026/2027";
-$semester = 4;
+$semester = 1;
 $ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
-const PROFIL_GITHUB = "satpamal";
+const PROFIL_GITHUB = "2611500065-glitch";
 
 // Bagian 2: Operator
 $batasSemester = 8;
@@ -106,6 +110,7 @@ switch ($programStudi) {
 			<ul id="navMenu">
 				<li><a href="#home">Beranda</a></li>
 				<li><a href="#about">Tentang</a></li>
+				<li><a href="#peminjaman">Peminjaman Fasilitas</a></li>
 				<li><a href="#contact">Kontak</a></li>
 			</ul>
 		</nav>
@@ -174,12 +179,60 @@ switch ($programStudi) {
 			</article>
 		</section>
 
-		<section id="contact">
+	
+			
+<section id="peminjaman">
+    <h2>Permohonan Peminjaman Fasilitas Kampus</h2>
+
+    <form id="peminjamanForm" method="POST" action="index.php#peminjaman">
+
+        <div class="form-group">
+            <label>Nama Penanggung Jawab</label>
+            <input type="text" name="nama_penanggung_jawab"
+                   placeholder="Masukkan nama penanggung jawab" required>
+        </div>
+
+        <div class="form-group">
+            <label>Jenis Fasilitas</label>
+            <select name="jenis_fasilitas" required>
+                <option value="">-- Pilih Fasilitas --</option>
+                <option value="Ruang Kelas">Ruang Kelas</option>
+                <option value="Aula">Aula</option>
+                <option value="Laboratorium Komputer">Laboratorium Komputer</option>
+                <option value="Proyektor">Proyektor</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Tanggal Peminjaman</label>
+            <input type="date" name="tanggal_peminjaman" required>
+        </div>
+
+        <div class="form-group">
+            <label>Durasi Peminjaman (jam)</label>
+            <input type="number" name="durasi_peminjaman"
+                   min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label>Keperluan Peminjaman</label>
+            <textarea name="keperluan_peminjaman"
+                      placeholder="Masukkan keperluan peminjaman"
+                      required></textarea>
+        </div>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+
+    </form>
+</section>
+<section id="contact">
+
 			<h2>Kontak</h2>
 
 			<p>
 				Kunjungi
-				<a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+				<a target="_blank" href="https://github.com/2611500065-glitch">Profil GitHub Saya</a>
 			</p>
 
 			<form id="contactForm" class="js-contact-form" data-validation="contact" action="index.php" method="post" novalidate>
